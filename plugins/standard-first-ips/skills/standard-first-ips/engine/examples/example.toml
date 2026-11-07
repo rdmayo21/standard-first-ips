@@ -1,0 +1,59 @@
+# Illustrative only. Every number here is a placeholder for a fictional saver, not a
+# recommendation. Replace them with your own figures and your own stated beliefs, and keep your
+# copy in your own folder (not inside the installed plugin).
+
+[person]
+age = 35.0
+start_wealth = 250000      # investable, real dollars (exclude the emergency fund)
+annual_saving = 30000      # real dollars a year
+quit_number = 1500000      # FI number: spending / withdrawal rate (here 60k / 4%)
+annual_spending = 60000    # real dollars a year after quitting
+cap_age = 75.0             # FI ages past this are censored here
+horizon_age = 95.0         # run-out is checked to this age
+hold_months = 0            # 0 = FI at first reach; e.g. 12 = held a year
+
+[model]
+paths = 8000
+seed = 1
+block_months = 60
+k = [0.3333, 0.5, 1.0]     # weight on the 1-in-10 bad-case FI age
+tie_years = 1.0
+samples = ["1927-07:2100-12", "1990-01:2100-12"]
+
+[data]
+dir = "../data"            # use an absolute path in your own config
+
+# Centers are real compound (geometric) annual returns you plan on. Yours, not this file's.
+[sleeves.stocks]
+source = "market"          # US market, Ken French
+center = 0.045
+center_sd = 0.018          # how unsure you are about that center
+vol = 0.17
+
+[sleeves.bills]
+source = "bills"           # US T-bills, Ken French
+center = 0.005
+center_sd = 0.01
+vol = 0.01
+
+# Candidates in order of simplicity, simplest first: the tie rule picks the first one inside
+# the tie band. Add your own; these only show the mechanics.
+[[candidates]]
+name = "100 stocks"
+targets = { stocks = 1.0 }
+
+[[candidates]]
+name = "80/20 stocks/bills"
+targets = { stocks = 0.80, bills = 0.20 }
+
+[[candidates]]
+name = "100 stocks, then 80/20 at the quit"
+targets = { stocks = 1.0 }
+post_quit = { stocks = 0.80, bills = 0.20 }
+
+[[scenarios]]
+name = "stocks 4.5%"
+
+[[scenarios]]
+name = "stocks 3%"
+centers = { stocks = 0.03 }

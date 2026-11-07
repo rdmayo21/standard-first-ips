@@ -1,0 +1,27 @@
+[project]
+name = "ipsengine"
+version = "0.1.0"
+description = "FI-date simulation engine for the standard-first IPS workflow (educational, not advice)"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["numpy>=1.26", "pandas>=2.1", "openpyxl>=3.1"]
+
+[project.scripts]
+ips-engine = "ipsengine.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ipsengine"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

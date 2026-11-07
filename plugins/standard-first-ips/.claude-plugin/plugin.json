@@ -1,0 +1,19 @@
+{
+  "name": "standard-first-ips",
+  "version": "0.1.0",
+  "description": "Write or revise a personal Investment Policy Statement from your own goal and standard: interview, builder + blind critics from two model families, FI-date simulation engine, and lessons from a real run. Educational; not investment advice.",
+  "author": {
+    "name": "Daniel Mayo"
+  },
+  "keywords": [
+    "investing",
+    "ips",
+    "financial-independence",
+    "portfolio",
+    "critic",
+    "simulation"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/rdmayo21/standard-first-ips",
+  "homepage": "https://github.com/rdmayo21/standard-first-ips"
+}

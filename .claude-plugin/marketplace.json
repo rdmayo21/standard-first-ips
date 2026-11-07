@@ -1,0 +1,16 @@
+{
+  "name": "standard-first-ips",
+  "owner": {
+    "name": "Daniel Mayo"
+  },
+  "metadata": {
+    "description": "The standard-first IPS workflow as a Claude Code plugin. Educational; not investment advice."
+  },
+  "plugins": [
+    {
+      "name": "standard-first-ips",
+      "source": "./plugins/standard-first-ips",
+      "description": "Standard-first IPS workflow: your goal and scoring standard first, then every policy answer derived from it and attacked by blind critics before you decide. Educational; not investment advice."
+    }
+  ]
+}
