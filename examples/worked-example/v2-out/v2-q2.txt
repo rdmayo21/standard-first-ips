@@ -1,0 +1,88 @@
+
+## sample 1927-07..2026-09, scenario base
+| candidate | median FI | p90 FI | gap k=0.50 (SE) | gap k=0.75 (SE) | gap k=1.00 (SE) | never by cap | quits | run out before horizon | turnover/yr |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 stocks, keep | 60.5 | 73.7 | +0.91 (0.13) tie | +1.20 (0.17) | +1.49 (0.22) | 2.6% | 7789 | 12.0% | 0.0% |
+| 100 stocks, 20% to bills at quit | 60.5 | 73.7 | +0.91 (0.13) tie | +1.20 (0.17) | +1.49 (0.22) | 2.6% | 7789 | 8.9% | 0.0% |
+| 70/30, keep | 60.2 | 72.5 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 2.2% | 7821 | 10.7% | 0.4% |
+| 70/30, 20% to bills at quit | 60.2 | 72.5 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 2.2% | 7821 | 7.7% | 0.4% |
+Simplest within the tie band: k=0.50: 100 stocks, keep, k=0.75: 70/30, keep, k=1.00: 70/30, keep
+Lowest run-out within the tie band: k=0.50: 70/30, 20% to bills at quit (7.7%), k=0.75: 70/30, 20% to bills at quit (7.7%), k=1.00: 70/30, 20% to bills at quit (7.7%). The simplest pick ignores run-out; if your goal includes staying quit, compare both before accepting it.
+
+## sample 1927-07..2026-09, scenario stocks 3%
+| candidate | median FI | p90 FI | gap k=0.50 (SE) | gap k=0.75 (SE) | gap k=1.00 (SE) | never by cap | quits | run out before horizon | turnover/yr |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 stocks, keep | 63.3 | 81.6 | +1.33 (0.13) | +1.75 (0.19) | +2.17 (0.25) | 7.6% | 7392 | 18.1% | 0.0% |
+| 100 stocks, 20% to bills at quit | 63.3 | 81.6 | +1.33 (0.13) | +1.75 (0.19) | +2.17 (0.25) | 7.6% | 7392 | 13.9% | 0.0% |
+| 70/30, keep | 62.8 | 79.9 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 6.4% | 7486 | 16.2% | 0.4% |
+| 70/30, 20% to bills at quit | 62.8 | 79.9 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 6.4% | 7486 | 12.1% | 0.4% |
+Simplest within the tie band: k=0.50: 70/30, keep, k=0.75: 70/30, keep, k=1.00: 70/30, keep
+Lowest run-out within the tie band: k=0.50: 70/30, 20% to bills at quit (12.1%), k=0.75: 70/30, 20% to bills at quit (12.1%), k=1.00: 70/30, 20% to bills at quit (12.1%). The simplest pick ignores run-out; if your goal includes staying quit, compare both before accepting it.
+
+## sample 1927-07..2026-09, scenario no value premium
+| candidate | median FI | p90 FI | gap k=0.50 (SE) | gap k=0.75 (SE) | gap k=1.00 (SE) | never by cap | quits | run out before horizon | turnover/yr |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 stocks, keep | 60.5 | 73.7 | +0.29 (0.11) tie | +0.40 (0.15) tie | +0.50 (0.20) tie | 2.6% | 7789 | 12.0% | 0.0% |
+| 100 stocks, 20% to bills at quit | 60.5 | 73.7 | +0.29 (0.11) tie | +0.40 (0.15) tie | +0.50 (0.20) tie | 2.6% | 7789 | 8.9% | 0.0% |
+| 70/30, keep | 60.4 | 73.2 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 2.6% | 7792 | 11.0% | 0.4% |
+| 70/30, 20% to bills at quit | 60.4 | 73.2 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 2.6% | 7792 | 8.0% | 0.4% |
+Simplest within the tie band: k=0.50: 100 stocks, keep, k=0.75: 100 stocks, keep, k=1.00: 100 stocks, keep
+Lowest run-out within the tie band: k=0.50: 70/30, 20% to bills at quit (8.0%), k=0.75: 70/30, 20% to bills at quit (8.0%), k=1.00: 70/30, 20% to bills at quit (8.0%). The simplest pick ignores run-out; if your goal includes staying quit, compare both before accepting it.
+
+## sample 1927-07..2026-09, scenario stocks 3% + no value premium
+| candidate | median FI | p90 FI | gap k=0.50 (SE) | gap k=0.75 (SE) | gap k=1.00 (SE) | never by cap | quits | run out before horizon | turnover/yr |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 stocks, keep | 63.3 | 81.6 | +0.62 (0.17) tie | +0.85 (0.23) tie | +1.08 (0.29) | 7.6% | 7392 | 18.1% | 0.0% |
+| 100 stocks, 20% to bills at quit | 63.3 | 81.6 | +0.62 (0.17) tie | +0.85 (0.23) tie | +1.08 (0.29) | 7.6% | 7392 | 13.9% | 0.0% |
+| 70/30, keep | 63.2 | 80.7 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 7.1% | 7433 | 16.6% | 0.4% |
+| 70/30, 20% to bills at quit | 63.2 | 80.7 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 7.1% | 7433 | 12.6% | 0.4% |
+Simplest within the tie band: k=0.50: 100 stocks, keep, k=0.75: 100 stocks, keep, k=1.00: 70/30, keep
+Lowest run-out within the tie band: k=0.50: 70/30, 20% to bills at quit (12.6%), k=0.75: 70/30, 20% to bills at quit (12.6%), k=1.00: 70/30, 20% to bills at quit (12.6%). The simplest pick ignores run-out; if your goal includes staying quit, compare both before accepting it.
+
+## sample 1990-01..2026-09, scenario base
+| candidate | median FI | p90 FI | gap k=0.50 (SE) | gap k=0.75 (SE) | gap k=1.00 (SE) | never by cap | quits | run out before horizon | turnover/yr |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 stocks, keep | 60.2 | 73.8 | +0.88 (0.11) tie | +1.12 (0.16) | +1.38 (0.21) | 3.3% | 7735 | 12.3% | 0.0% |
+| 100 stocks, 20% to bills at quit | 60.2 | 73.8 | +0.88 (0.11) tie | +1.12 (0.16) | +1.38 (0.21) | 3.3% | 7735 | 9.6% | 0.0% |
+| 70/30, keep | 59.9 | 72.8 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 2.6% | 7791 | 10.2% | 0.6% |
+| 70/30, 20% to bills at quit | 59.9 | 72.8 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 2.6% | 7791 | 7.4% | 0.6% |
+Simplest within the tie band: k=0.50: 100 stocks, keep, k=0.75: 70/30, keep, k=1.00: 70/30, keep
+Lowest run-out within the tie band: k=0.50: 70/30, 20% to bills at quit (7.4%), k=0.75: 70/30, 20% to bills at quit (7.4%), k=1.00: 70/30, 20% to bills at quit (7.4%). The simplest pick ignores run-out; if your goal includes staying quit, compare both before accepting it.
+
+## sample 1990-01..2026-09, scenario stocks 3%
+| candidate | median FI | p90 FI | gap k=0.50 (SE) | gap k=0.75 (SE) | gap k=1.00 (SE) | never by cap | quits | run out before horizon | turnover/yr |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 stocks, keep | 63.2 | 82.1 | +1.63 (0.14) | +2.10 (0.21) | +2.58 (0.28) | 8.1% | 7356 | 18.9% | 0.0% |
+| 100 stocks, 20% to bills at quit | 63.2 | 82.1 | +1.63 (0.14) | +2.10 (0.21) | +2.58 (0.28) | 8.1% | 7356 | 14.9% | 0.0% |
+| 70/30, keep | 62.5 | 80.2 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 6.7% | 7466 | 15.6% | 0.7% |
+| 70/30, 20% to bills at quit | 62.5 | 80.2 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 6.7% | 7466 | 11.5% | 0.7% |
+Simplest within the tie band: k=0.50: 70/30, keep, k=0.75: 70/30, keep, k=1.00: 70/30, keep
+Lowest run-out within the tie band: k=0.50: 70/30, 20% to bills at quit (11.5%), k=0.75: 70/30, 20% to bills at quit (11.5%), k=1.00: 70/30, 20% to bills at quit (11.5%). The simplest pick ignores run-out; if your goal includes staying quit, compare both before accepting it.
+
+## sample 1990-01..2026-09, scenario no value premium
+| candidate | median FI | p90 FI | gap k=0.50 (SE) | gap k=0.75 (SE) | gap k=1.00 (SE) | never by cap | quits | run out before horizon | turnover/yr |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 stocks, keep | 60.2 | 73.8 | +0.46 (0.09) tie | +0.60 (0.12) tie | +0.75 (0.16) tie | 3.3% | 7735 | 12.3% | 0.0% |
+| 100 stocks, 20% to bills at quit | 60.2 | 73.8 | +0.46 (0.09) tie | +0.60 (0.12) tie | +0.75 (0.16) tie | 3.3% | 7735 | 9.6% | 0.0% |
+| 70/30, keep | 60.1 | 73.2 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 2.8% | 7776 | 10.7% | 0.6% |
+| 70/30, 20% to bills at quit | 60.1 | 73.2 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 2.8% | 7776 | 7.9% | 0.6% |
+Simplest within the tie band: k=0.50: 100 stocks, keep, k=0.75: 100 stocks, keep, k=1.00: 100 stocks, keep
+Lowest run-out within the tie band: k=0.50: 70/30, 20% to bills at quit (7.9%), k=0.75: 70/30, 20% to bills at quit (7.9%), k=1.00: 70/30, 20% to bills at quit (7.9%). The simplest pick ignores run-out; if your goal includes staying quit, compare both before accepting it.
+
+## sample 1990-01..2026-09, scenario stocks 3% + no value premium
+| candidate | median FI | p90 FI | gap k=0.50 (SE) | gap k=0.75 (SE) | gap k=1.00 (SE) | never by cap | quits | run out before horizon | turnover/yr |
+|---|---|---|---|---|---|---|---|---|---|
+| 100 stocks, keep | 63.2 | 82.1 | +0.88 (0.14) tie | +1.15 (0.21) | +1.42 (0.28) | 8.1% | 7356 | 18.9% | 0.0% |
+| 100 stocks, 20% to bills at quit | 63.2 | 82.1 | +0.88 (0.14) tie | +1.15 (0.21) | +1.42 (0.28) | 8.1% | 7356 | 14.9% | 0.0% |
+| 70/30, keep | 62.8 | 81.0 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 7.3% | 7415 | 16.4% | 0.6% |
+| 70/30, 20% to bills at quit | 62.8 | 81.0 | +0.00 (0.00) tie | +0.00 (0.00) tie | +0.00 (0.00) tie | 7.3% | 7415 | 12.3% | 0.6% |
+Simplest within the tie band: k=0.50: 100 stocks, keep, k=0.75: 70/30, keep, k=1.00: 70/30, keep
+Lowest run-out within the tie band: k=0.50: 70/30, 20% to bills at quit (12.3%), k=0.75: 70/30, 20% to bills at quit (12.3%), k=1.00: 70/30, 20% to bills at quit (12.3%). The simplest pick ignores run-out; if your goal includes staying quit, compare both before accepting it.
+
+## Summary over 8 cells (candidates listed simplest first)
+| candidate | in tie band k=0.50 | in tie band k=0.75 | in tie band k=1.00 | simplest pick k=0.50 | simplest pick k=0.75 | simplest pick k=1.00 |
+|---|---|---|---|---|---|---|
+| 100 stocks, keep | 6/8 | 3/8 | 2/8 | 6/8 | 3/8 | 2/8 |
+| 100 stocks, 20% to bills at quit | 6/8 | 3/8 | 2/8 | 0/8 | 0/8 | 0/8 |
+| 70/30, keep | 8/8 | 8/8 | 8/8 | 2/8 | 5/8 | 6/8 |
+| 70/30, 20% to bills at quit | 8/8 | 8/8 | 8/8 | 0/8 | 0/8 | 0/8 |

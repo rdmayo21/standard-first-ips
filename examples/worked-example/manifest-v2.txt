@@ -1,0 +1,55 @@
+manifest written 2026-11-07T16:41:11Z, before any v2 scoring
+fda2bf7f49668a1bbeb1a40f80b90dbb497fd24782cc9ad6e1ffc868cc6ab27e  config-v2-q1-billsvol-seed2.toml
+7900c861375b85fe1e0dac308c75c448f40be9b242f08328b9ff61778fcde343  config-v2-q1-billsvol-seed3.toml
+ae9b2a36386d2e1e9ad3bc1e3ed70bc30f9643eb9321bfb820028e5f27ba28f0  config-v2-q1-billsvol.toml
+070229e60c6f6108041cbba9019900897b6adb0a5db3bc9b719ee17d19a390c6  config-v2-q1-seed2.toml
+be1d80fd015dfa57c35e5fc5d014d55a9030d371d6b66deb2fe884861e0c213b  config-v2-q1-seed3.toml
+561352099b95af1da7080b8898ee55198fbeb75139d3ae158dcfaed1e2f76ae2  config-v2-q1-stress095-seed2.toml
+e63e60b428c8da42928e3f35aeea714c55ab30d090019b52a4ae539281333928  config-v2-q1-stress095-seed3.toml
+e1fa20b06c6b06509f7c62210900ea5eeac2b66a6259ef918a6d56d3bc9da0cc  config-v2-q1-stress095.toml
+f98bc40e188a6b927466518da75fa9a8aff149e47567a8e8b1caf05b182c4e7e  config-v2-q1.toml
+376afa139b92dee1c509a1936dec0e6f6f6df1057dbae3cb63bb60fe23684fe3  config-v2-q2-billsvol-seed2.toml
+8016913ed128d42037815beff0b954e38389edc0343d968828fb0dbf40a300a2  config-v2-q2-billsvol-seed3.toml
+0bc679a35a4f091fd4130ac91e2865f969ddb706de9573cb5fd04855a5dd87f9  config-v2-q2-billsvol.toml
+67bb8b4afdfc089999442e1c9c367864c550d23002c541762b0b15a26887114d  config-v2-q2-seed2.toml
+8b5e17f21498de18da711db1ae2923baf695b2e7c619b15f809258e6196a62db  config-v2-q2-seed3.toml
+4b5d0c3dd2a54f197c28b3c1c4697e2087022ef6005d187e81c1d3e9633bdc59  config-v2-q2-stress095-seed2.toml
+c7ec7694133d772b46f73480f9a8f6a05df6299a400385f52a7daeb7b82c6465  config-v2-q2-stress095-seed3.toml
+2620e47dc401b0fecd6fb3c6fe05ad2a4183368affc357b18519e4a1c6fcd2cd  config-v2-q2-stress095.toml
+50f42ed6438889fbbd50f9a5768fb873930ded8fca4384f876c71ae0d4b3f44d  config-v2-q2.toml
+ba0b6fbe62317c2a74960de8c3a47f3974433fd019cb8e80cc11614e00f4b553  combine_v2.py
+f0bb2b5137fea315284cc85c99c90cab10137d20353f4507413cf9a3ec1069bb  runout_paired.py
+9143237ccc1147f494ac801ad3cf8c7645058a2f48c2d32dce37e2edefd43ce4  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/data/6_Portfolios_2x3.csv
+cfab9b9be4a5d4f06253c4dcc3f7e0b28b1d58837e710dd7cb1fd54a49e7ad7c  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/data/CPIAUCNS.csv
+a3894d74d553cab812eabbe706bdbf443c97eb20b24b05e3e5f3ce47e46b90bb  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/data/F-F_Research_Data_Factors.csv
+2228e1eb9fbb9574c7b163a387346d947fd715382c6c12f1c9ca9d7b7f93c51a  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/data/RETRIEVED.csv
+0bf8ba978e64964282ead98a6a25691218d4517d07c98c89e2716706f6f0a127  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/data/Century-of-Factor-Premia-Monthly.xlsx
+98102790c79af2f85f2b0133a72a8aa7772e6d6ff3eb3c83adecbcae251b5a82  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/ipsengine/__init__.py
+380358209884ee9783e8963a50c91acb77332d2b68f64253a0839b7fbdc18762  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/ipsengine/cli.py
+745d4195731a3a1046951048e64dd1d8dda05ca2a89caa7508321a8142f76b9a  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/ipsengine/config.py
+fec6d55ae0aed8e33f18dfa6fd76bea4cb9d826bcdd87baaa0ea7c1bf9947bd6  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/ipsengine/data.py
+7b4fd4023309f68c0fb9b141aee3a107f143906bd3a51247d6e6b210611cba84  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/ipsengine/paths.py
+94a16a58d0233f8ebb2d451bd638e6777227181cb9184998a96816223472bee3  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/ipsengine/policy.py
+e642c360f3c9312fe4b6f7cbadfff4d570fe3c1a7b9fd042c9ad37155360bf0f  <repo>/plugins/standard-first-ips/skills/standard-first-ips/engine/ipsengine/score.py
+combine_v2.py parsing fix (gap_k column slice 4->5) at 16:42:58Z, after the first v2 engine runs; no input changed. New hash: 7581ea4087864a9bec3a137179f1e9a0b37655b498ae2e307a5179e1a14026e6  combine_v2.py
+
+## Portable paths (added 2026-11-07, after all reviews)
+Every config's [data] dir line was changed from an absolute local path to ../../plugins/standard-first-ips/skills/standard-first-ips/engine/data, and nothing else. config-v2-q1.toml and config-v2-q2.toml re-run and reproduce v2-out/v2-q1.csv and v2-out/v2-q2.csv byte for byte. Hashes after the change:
+6186e143f69aa4556f96b162523be8da6641331ee2ea5eef27a4da88eb89bc65  config-v2-q1-billsvol-seed2.toml
+db7527c6e460051bccd176052fff7fc6bf6327b8430cbcd01c92b277c23453b4  config-v2-q1-billsvol-seed3.toml
+0d0767d9de3c88a7eb70effa2a72c4ebd258e2a34e31499d67332c3e420a3685  config-v2-q1-billsvol.toml
+2b3ebafac77d67f82884714d92fa7d5964b89790e1f806e0d8f08874c4bee93f  config-v2-q1-seed2.toml
+aba03df791c925e3e4a9ee403523208c201bf42a548490df57d13bdc5e89c9fb  config-v2-q1-seed3.toml
+249522273a092bbb6c5212bcc59c5eff7a6d62e24646e87361590008cec2a542  config-v2-q1-stress095-seed2.toml
+762199867ce648d8117faadfdf08559311d55c10520f82a0ee9c0d81566c0992  config-v2-q1-stress095-seed3.toml
+fd31355f52d1fc5929cc0dbd50b02314480e4b1afe61e9c0680f4ac0dcbdf43e  config-v2-q1-stress095.toml
+a0d944642973d7dcc198abeb00da0ec355b3c98816b9470a5981eaff7c53a3ec  config-v2-q1.toml
+7e4c25dfb714f3703e6743543f37a7c1e63c518eb3d0292e7f4f6e551e472702  config-v2-q2-billsvol-seed2.toml
+ec4dcccd129131c491cb62505462fc7d2523894a262cc7254c9c09ad697d00b0  config-v2-q2-billsvol-seed3.toml
+62d8436cd024f5fe570430679291b69e0669cd32abbaed887420461dece22f52  config-v2-q2-billsvol.toml
+df8bb5ff64d3ac2b3e44232f3d0686e0763989b33c0b5679b8897ba16a9851f0  config-v2-q2-seed2.toml
+cc114a2dd115d91dda70cc73d5c5a96409e9ad1c6c66048406dbff45355f9669  config-v2-q2-seed3.toml
+c160c01bf4db2f576e05316ff635c3838f469348d26881629c2a208c97a2306d  config-v2-q2-stress095-seed2.toml
+8c0a87affea5c0f3fa65f05d4b931e238d017cc734328ebc8a7e10c996d70ab9  config-v2-q2-stress095-seed3.toml
+f9c12f84e64e7944555e19eb28df4cbc8f9e3d4adf1685253e63c7761ce880bb  config-v2-q2-stress095.toml
+b612c6f2bfddf8f026e01ce15a10141628361f0815bb100462757c6705c9afa2  config-v2-q2.toml

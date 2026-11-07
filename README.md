@@ -12,6 +12,10 @@ A workflow for writing or revising a personal Investment Policy Statement where:
 It comes from one person's rebuild of their own IPS in November 2026. The lessons from that run
 are built in as checks (`references/lessons.md`).
 
+**See it run:** [`examples/worked-example/`](examples/worked-example/) takes a fictional investor
+from the first interview question to a signed IPS. It includes the engine output and every blind
+critic review. In that run, the critics overturned the first answer before the investor saw it.
+
 > **Not investment advice.** This is educational software and a process. It doesn't know your
 > situation and doesn't recommend securities. You make and execute every decision. Check
 > anything that matters with a qualified professional.

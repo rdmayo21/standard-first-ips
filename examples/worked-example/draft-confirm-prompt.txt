@@ -1,0 +1,5 @@
+Confirm pass on an IPS draft for a FICTIONAL investor, "Robin". Two blind reviews (04-review-claude.md and 04-review-gpt.md) found defects in draft v1. Robin then decided the open items, recorded in 03-decisions.md under "Decisions after the blind draft review" (D3–D5). The draft is now 04-ips.md, draft v2. Draft v1 was overwritten; the reviews describe what it said.
+
+Verify each fix the reviews asked for against 04-ips.md, 03-decisions.md, 01-standard.md and the evidence (02-builder-answer.md, results-v2-*.md, v2-out/*.csv). Look for any new contradiction, any policy Robin didn't decide, any number that doesn't match the evidence, and any wording that amounts to investment advice.
+
+Reply in under 150 words: sign-ready or not, plus any remaining defect with its line and fix.

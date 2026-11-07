@@ -1,0 +1,79 @@
+# Robin (FICTIONAL) -- phase 2 v2, Q1. Variant: stress (corr 0.95), seed 2.
+# Inputs fixed 2026-11-07 after the critics and Robin's follow-up (01-standard.md, "Follow-up
+# after the phase-2 critics"), BEFORE any v2 scoring. Robin's decisions: cap_age 85; market-value
+# center correlation 0.72 primary, 0.95 stress; trend excluded (leverage); value = one fund.
+# Vols: mean of the two samples' annualized real sd, rounded to 0.01 (market 0.169 -> 0.17,
+# value 0.222 -> 0.22, bills 0.0153 -> 0.02). Bills primary stays at the brief's 0.01; the
+# rule-computed 0.02 is a sensitivity.
+# Proxy mismatch: the engine's value series is 50/50 small-value + big-value (Ken French), not
+# any single fund's index.
+
+[person]
+age = 44.0
+start_wealth = 420000
+annual_saving = 32000
+quit_number = 1660000
+annual_spending = 58000
+cap_age = 85.0
+horizon_age = 95.0
+hold_months = 12
+
+[model]
+paths = 8000
+seed = 2
+block_months = 60
+k = [0.5, 0.75, 1.0]
+tie_years = 1.0
+samples = ["1927-07:2100-12", "1990-01:2100-12"]
+
+[model.center_corr]
+"stocks,value" = 0.95
+
+[data]
+dir = "../../plugins/standard-first-ips/skills/standard-first-ips/engine/data"
+
+[sleeves.stocks]
+source = "market"
+center = 0.045
+center_sd = 0.018
+vol = 0.17
+
+[sleeves.value]
+source = "value"
+center = 0.050
+center_sd = 0.025
+vol = 0.22
+
+[sleeves.bills]
+source = "bills"
+center = 0.005
+center_sd = 0.010
+vol = 0.01
+
+# Simplest first: 1 fund; then 2 funds (brief's order: value before bills). Bands +/-5.
+[[candidates]]
+name = "100 stocks"
+targets = { stocks = 1.0 }
+
+[[candidates]]
+name = "70/30 market/value"
+targets = { stocks = 0.70, value = 0.30 }
+
+[[candidates]]
+name = "80/20 market/bills"
+targets = { stocks = 0.80, bills = 0.20 }
+
+[[scenarios]]
+name = "base"
+
+[[scenarios]]
+name = "stocks 3%"
+centers = { stocks = 0.030, value = 0.035 }
+
+[[scenarios]]
+name = "no value premium"
+centers = { value = 0.045 }
+
+[[scenarios]]
+name = "stocks 3% + no value premium"
+centers = { stocks = 0.030, value = 0.030 }

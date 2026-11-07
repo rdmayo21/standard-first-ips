@@ -1,0 +1,5 @@
+Confirm pass. Two blind reviews (02-critic-claude.md, 02-critic-gpt.md) asked for fixes to the builder's answer. The investor (fictional "Robin") then decided the open defaults, recorded at the end of 01-standard.md under "Follow-up after the phase-2 critics". The builder rewrote 02-builder-answer.md as v2, with new runs (config-v2-*.toml, results-v2-*.md, v2-out/, combine_v2.py, manifest-v2.txt). The engine is at ../../plugins/standard-first-ips/skills/standard-first-ips/engine.
+
+Verify each requested fix against the files. Check that v2 applies Robin's decisions exactly: cap 85, correlation 0.72 primary and 0.95 stress, trend excluded, value counted as one fund, and the combining rule "simplest mix in the tie band in >= 75% of cells at every k, else 100 stocks". Re-run one cheap check yourself, for example reproduce one headline number or apply the combining rule to the CSVs. Write any scratch files under /tmp. Look for any new contradiction, result-chasing, overstated precision, or advice-like wording.
+
+Reply in under 200 words: holds / holds with caveats / doesn't, then any remaining defect with file:line and its fix.

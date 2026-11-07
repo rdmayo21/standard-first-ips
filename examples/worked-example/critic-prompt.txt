@@ -1,0 +1,15 @@
+You are a blind, adversarial reviewer. Read 02-builder-answer.md and the code and outputs it cites in this folder (config-*.toml, results-*.md, results-*.csv, runout_paired.py), plus 01-standard.md. The engine is at ../../plugins/standard-first-ips/skills/standard-first-ips/engine (read ipsengine/*.py; the lessons are in ../references/lessons.md, relative to the engine). Don't trust the report's framing; check the code and outputs. You may re-run cheap checks (under five minutes of compute), e.g. `uv run --project <engine> ips-engine score <config>` with another seed. Write any scratch configs under /tmp, not in this folder.
+
+Context: the investor is FICTIONAL ("Robin"). Their standard is in 01-standard.md, verbatim. Scoring: FI = quit number held 12 months; S = median FI age + k × p90 FI age, k in {0.5, 0.75, 1.0}; options within 1.0 year of the best tie, and the simpler wins (fewer funds, then fewer rules). Run-out is reported beside the score, not in it.
+
+Claimed conclusion: Q1, 70/30 market/value is the only mix inside the tie band in all 8 cells at every k, while 100 stocks wins the simplicity tie-break where tied, so the pick depends on how cells are combined (Robin's call). Q2, a quit-day switch never changes FI age but cuts run-out in every cell (bills 2.3–4.8 pts, trend 3.8–6.6 pts), so it's Robin's call whether that is worth a fund and a rule.
+
+Check:
+1. Are inputs (centers, vols, correlations) defensible, sourced, and fixed before scoring? Is any input tilted for or against one option? In particular, is the value advantage an artifact of independent center draws?
+2. Are there code bugs, or unfair comparisons: paths not paired, different path counts, the wrong baseline?
+3. Does the result hold across samples and belief cells, or only in a corner?
+4. Is there leverage, crisis behavior or illiquidity the model doesn't capture?
+5. Can the investor actually buy each option?
+6. Does the wording overstate the evidence, or amount to investment advice?
+
+Reply in under 400 words: a verdict (holds / doesn't / holds with caveats), then numbered specific defects with file:line, each with severity and a fix.

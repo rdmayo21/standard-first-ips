@@ -1,0 +1,128 @@
+
+## sample 1927-07..2026-09, scenario base (baseline: 100 stocks, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 12.14% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 100 stocks, 20% to bills at quit | 9.05% | -3.09% (0.18%) | +0.00 | +0.00 |
+| 70/30, keep | 10.67% | -1.48% (0.26%) | -0.33 | -1.24 |
+| 70/30, 20% to bills at quit | 7.83% | -4.31% (0.16%) | -0.33 | -1.24 |
+
+## sample 1927-07..2026-09, scenario stocks 3% (baseline: 100 stocks, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 17.96% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 100 stocks, 20% to bills at quit | 13.99% | -3.96% (0.22%) | +0.00 | +0.00 |
+| 70/30, keep | 16.39% | -1.57% (0.31%) | -0.50 | -1.67 |
+| 70/30, 20% to bills at quit | 12.07% | -5.89% (0.33%) | -0.50 | -1.67 |
+
+## sample 1927-07..2026-09, scenario no value premium (baseline: 100 stocks, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 12.14% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 100 stocks, 20% to bills at quit | 9.05% | -3.09% (0.18%) | +0.00 | +0.00 |
+| 70/30, keep | 11.16% | -0.98% (0.18%) | -0.08 | -0.67 |
+| 70/30, 20% to bills at quit | 8.30% | -3.85% (0.14%) | -0.08 | -0.67 |
+
+## sample 1927-07..2026-09, scenario stocks 3% + no value premium (baseline: 100 stocks, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 17.96% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 100 stocks, 20% to bills at quit | 13.99% | -3.96% (0.22%) | +0.00 | +0.00 |
+| 70/30, keep | 17.06% | -0.89% (0.25%) | -0.17 | -0.57 |
+| 70/30, 20% to bills at quit | 12.58% | -5.37% (0.30%) | -0.17 | -0.57 |
+
+## sample 1990-01..2026-09, scenario base (baseline: 100 stocks, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 13.01% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 100 stocks, 20% to bills at quit | 10.01% | -3.00% (0.17%) | +0.00 | +0.00 |
+| 70/30, keep | 10.38% | -2.63% (0.29%) | -0.33 | -1.17 |
+| 70/30, 20% to bills at quit | 7.64% | -5.37% (0.34%) | -0.33 | -1.17 |
+
+## sample 1990-01..2026-09, scenario stocks 3% (baseline: 100 stocks, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 18.93% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 100 stocks, 20% to bills at quit | 15.10% | -3.82% (0.14%) | +0.00 | +0.00 |
+| 70/30, keep | 15.77% | -3.16% (0.44%) | -0.46 | -1.91 |
+| 70/30, 20% to bills at quit | 12.03% | -6.89% (0.38%) | -0.46 | -1.91 |
+
+## sample 1990-01..2026-09, scenario no value premium (baseline: 100 stocks, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 13.01% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 100 stocks, 20% to bills at quit | 10.01% | -3.00% (0.17%) | +0.00 | +0.00 |
+| 70/30, keep | 10.79% | -2.22% (0.33%) | -0.17 | -0.58 |
+| 70/30, 20% to bills at quit | 8.19% | -4.82% (0.34%) | -0.17 | -0.58 |
+
+## sample 1990-01..2026-09, scenario stocks 3% + no value premium (baseline: 100 stocks, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 18.93% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 100 stocks, 20% to bills at quit | 15.10% | -3.82% (0.14%) | +0.00 | +0.00 |
+| 70/30, keep | 16.35% | -2.58% (0.44%) | -0.17 | -1.07 |
+| 70/30, 20% to bills at quit | 12.67% | -6.25% (0.40%) | -0.17 | -1.07 |
+
+## sample 1927-07..2026-09, scenario base (baseline: 70/30, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 12.14% | +1.48% (0.26%) | +0.33 | +1.24 |
+| 100 stocks, 20% to bills at quit | 9.05% | -1.62% (0.29%) | +0.33 | +1.24 |
+| 70/30, keep | 10.67% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 70/30, 20% to bills at quit | 7.83% | -2.84% (0.20%) | +0.00 | +0.00 |
+
+## sample 1927-07..2026-09, scenario stocks 3% (baseline: 70/30, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 17.96% | +1.57% (0.31%) | +0.50 | +1.67 |
+| 100 stocks, 20% to bills at quit | 13.99% | -2.40% (0.33%) | +0.50 | +1.67 |
+| 70/30, keep | 16.39% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 70/30, 20% to bills at quit | 12.07% | -4.32% (0.16%) | +0.00 | +0.00 |
+
+## sample 1927-07..2026-09, scenario no value premium (baseline: 70/30, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 12.14% | +0.98% (0.18%) | +0.08 | +0.67 |
+| 100 stocks, 20% to bills at quit | 9.05% | -2.12% (0.27%) | +0.08 | +0.67 |
+| 70/30, keep | 11.16% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 70/30, 20% to bills at quit | 8.30% | -2.87% (0.13%) | +0.00 | +0.00 |
+
+## sample 1927-07..2026-09, scenario stocks 3% + no value premium (baseline: 70/30, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 17.96% | +0.89% (0.25%) | +0.17 | +0.57 |
+| 100 stocks, 20% to bills at quit | 13.99% | -3.07% (0.29%) | +0.17 | +0.57 |
+| 70/30, keep | 17.06% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 70/30, 20% to bills at quit | 12.58% | -4.48% (0.20%) | +0.00 | +0.00 |
+
+## sample 1990-01..2026-09, scenario base (baseline: 70/30, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 13.01% | +2.63% (0.29%) | +0.33 | +1.17 |
+| 100 stocks, 20% to bills at quit | 10.01% | -0.37% (0.25%) | +0.33 | +1.17 |
+| 70/30, keep | 10.38% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 70/30, 20% to bills at quit | 7.64% | -2.74% (0.20%) | +0.00 | +0.00 |
+
+## sample 1990-01..2026-09, scenario stocks 3% (baseline: 70/30, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 18.93% | +3.16% (0.44%) | +0.46 | +1.91 |
+| 100 stocks, 20% to bills at quit | 15.10% | -0.66% (0.37%) | +0.46 | +1.91 |
+| 70/30, keep | 15.77% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 70/30, 20% to bills at quit | 12.03% | -3.73% (0.25%) | +0.00 | +0.00 |
+
+## sample 1990-01..2026-09, scenario no value premium (baseline: 70/30, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 13.01% | +2.22% (0.33%) | +0.17 | +0.58 |
+| 100 stocks, 20% to bills at quit | 10.01% | -0.77% (0.30%) | +0.17 | +0.58 |
+| 70/30, keep | 10.79% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 70/30, 20% to bills at quit | 8.19% | -2.60% (0.21%) | +0.00 | +0.00 |
+
+## sample 1990-01..2026-09, scenario stocks 3% + no value premium (baseline: 70/30, keep)
+| candidate | run-out | run-out minus baseline (SE) | median FI minus baseline | p90 FI minus baseline |
+|---|---|---|---|---|
+| 100 stocks, keep | 18.93% | +2.58% (0.44%) | +0.17 | +1.07 |
+| 100 stocks, 20% to bills at quit | 15.10% | -1.24% (0.40%) | +0.17 | +1.07 |
+| 70/30, keep | 16.35% | +0.00% (0.00%) | +0.00 | +0.00 |
+| 70/30, 20% to bills at quit | 12.67% | -3.68% (0.25%) | +0.00 | +0.00 |

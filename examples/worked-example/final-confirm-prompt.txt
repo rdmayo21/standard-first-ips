@@ -1,0 +1,5 @@
+Final confirm pass on 04-ips.md (draft v3) for a FICTIONAL investor, "Robin". The previous confirm reviews are 04-confirm-claude.md and 04-confirm-gpt.md. Robin's new decision D6 is at the end of 03-decisions.md. The engine's mechanics are in ../../plugins/standard-first-ips/skills/standard-first-ips/engine/ipsengine/policy.py.
+
+Verify that each remaining defect is fixed. Check that §9's timing now matches policy.py exactly, apart from the labelled yearly CPI step. Look for any new contradiction, any undecided policy, or any advice-like wording.
+
+Reply in under 120 words: sign-ready or not, plus any remaining material defect with its line and fix. Ignore pure style.

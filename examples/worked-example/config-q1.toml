@@ -1,0 +1,90 @@
+# Robin (FICTIONAL investor) -- phase 2, Question 1: accumulation mix, no quit-day switch.
+# Every figure and belief is Robin's (01-standard.md). Inputs fixed 2026-11-07 BEFORE any scoring.
+#
+# Vols (builder's rule, fixed before scoring): mean of the annualized sd of real monthly returns
+# over the two samples (1927-07..2026-02 and 1990-01..2026-02), rounded to 0.01.
+#   market      0.1849 / 0.1526 -> 0.169 -> 0.17 (reproduces the brief's 0.17, so the rule is
+#               consistent with the anchor)
+#   value       0.2582 / 0.1862 -> 0.222 -> 0.22
+#   trend_proxy 0.0716 / 0.0706 -> 0.071 -> 0.07
+#   bills       0.0178 / 0.0128 -> 0.015; the brief fixes 0.01, kept as given.
+# Scenario "stocks 3%" moves value by the same -1.5 points (5.0% -> 3.5%), keeping Robin's
+# "half a point over the market"; disclosed as a builder default (see 02-builder-answer.md).
+# Centers drawn independently (engine default, no center_corr).
+
+[person]
+age = 44.0
+start_wealth = 420000
+annual_saving = 32000
+quit_number = 1660000
+annual_spending = 58000
+cap_age = 75.0
+horizon_age = 95.0
+hold_months = 12
+
+[model]
+paths = 8000
+seed = 1
+block_months = 60
+k = [0.5, 0.75, 1.0]
+tie_years = 1.0
+samples = ["1927-07:2100-12", "1990-01:2100-12"]
+
+[data]
+dir = "../../plugins/standard-first-ips/skills/standard-first-ips/engine/data"
+
+[sleeves.stocks]
+source = "market"
+center = 0.045
+center_sd = 0.018
+vol = 0.17
+
+[sleeves.value]
+source = "value"
+center = 0.050
+center_sd = 0.025
+vol = 0.22
+
+[sleeves.trend]
+source = "trend_proxy"
+center = 0.025
+center_sd = 0.020
+vol = 0.07
+
+[sleeves.bills]
+source = "bills"
+center = 0.005
+center_sd = 0.010
+vol = 0.01
+
+# Simplest first (brief's order). Default bands (+/-5 points absolute).
+[[candidates]]
+name = "100 stocks"
+targets = { stocks = 1.0 }
+
+[[candidates]]
+name = "70/30 market/value"
+targets = { stocks = 0.70, value = 0.30 }
+
+[[candidates]]
+name = "85/15 market/trend"
+targets = { stocks = 0.85, trend = 0.15 }
+
+[[candidates]]
+name = "80/20 market/bills"
+targets = { stocks = 0.80, bills = 0.20 }
+
+[[scenarios]]
+name = "base"
+
+[[scenarios]]
+name = "stocks 3%"
+centers = { stocks = 0.030, value = 0.035 }
+
+[[scenarios]]
+name = "no value premium"
+centers = { value = 0.045 }
+
+[[scenarios]]
+name = "stocks 3% + no value premium"
+centers = { stocks = 0.030, value = 0.030 }

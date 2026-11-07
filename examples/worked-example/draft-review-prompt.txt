@@ -1,0 +1,10 @@
+You are a blind reviewer of a first Investment Policy Statement draft for a FICTIONAL investor, "Robin". The new draft is 04-ips.md. There is no previous signed version: this is revision 1. Robin decided, verbatim, in 01-standard.md (the standard and its operational definitions, including the section "Follow-up after the phase-2 critics") and in 03-decisions.md. The evidence is 02-builder-answer.md (v2) and results-v2-q1.md / results-v2-q2.md.
+
+Check:
+(a) Does the draft enact exactly those decisions, and nothing more? Flag every addition, and say whether it is a necessary specification, an agent default labelled as one, or unauthorized policy.
+(b) Are there leftovers of retired options (trend, cap 75, independent centers, keep-after-quit)?
+(c) Is every state covered unambiguously: each sleeve above or below its band, new money, the quit month, withdrawals, the fallback if no single value fund exists, a switch from fallback to 70/30 later?
+(d) Do the quoted numbers match the evidence files?
+(e) Is there any wording that amounts to investment advice?
+
+Reply in under 300 words: sign-ready or not, then defects with line numbers and exact fixes.
