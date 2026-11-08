@@ -1,5 +1,6 @@
 {
   "name": "standard-first-ips",
+  "displayName": "Standard-first IPS",
   "version": "0.1.0",
   "description": "Write or revise a personal Investment Policy Statement from your own goal and standard: interview, builder + blind critics from two model families, FI-date simulation engine, and lessons from a real run. Educational; not investment advice.",
   "author": {
