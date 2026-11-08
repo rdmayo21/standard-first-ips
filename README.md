@@ -90,6 +90,24 @@ plugins/standard-first-ips/
 PROMPT.md        chat-only version
 ```
 
+## Privacy
+
+The plugin's code runs on your machine. It has no server, no telemetry and no hooks, and its
+author never sees your answers. Your standard, decisions and IPS are files in the folder you work
+in. Four things leave your machine:
+
+- **Your AI assistant.** As with any Claude Code skill, the conversation goes to Anthropic under
+  your own account and its terms, including any web searches or page fetches Claude makes (for
+  example, checking whether you can buy a fund).
+- **The optional GPT critic.** If the OpenAI Codex CLI is installed, the skill sends OpenAI the
+  critic prompt (your standard verbatim, plus your decisions in IPS reviews) and lets Codex read
+  any file in your working folder, including your figures, configs and IPS drafts. This runs
+  under your own OpenAI account and its terms. Leave Codex uninstalled if you don't want that.
+- **Public data downloads.** `ips-engine fetch` downloads public return data (Ken French's data
+  library, FRED, AQR). They are plain downloads with no personal data.
+- **Python packages.** `uv` downloads the engine's packages (numpy, pandas, openpyxl) from PyPI
+  on first run.
+
 ## License
 
 MIT. See `LICENSE`. Not investment advice; provided as is, without warranty.
